@@ -31,9 +31,39 @@ _evals/               test prompts — dev tooling, not a skill
 
 The four lenses are thin on purpose. They add what's specific to their type and defer everything else to the core. If you ever see `design-ecommerce` explaining the eight elements, that's a bug — it shouldn't.
 
-## Install
+## Install (Chatbox)
 
-Chatbox loads skills from a `skills` folder next to its app data. Where that lives depends on your OS:
+The easiest way — through the Chatbox interface.
+
+### 1. Open the Skills panel
+
+In **Work mode**, click the **Skills** icon in the top-right corner.
+
+![Open Skills](docs/screenshots/01-open-skills.png)
+
+### 2. Click "Install from GitHub"
+
+![Install from GitHub](docs/screenshots/02-click-install-from-github.png)
+
+### 3. Paste the repository URL
+
+```
+https://github.com/delphinelil09-sys/universal-design
+```
+
+and click **Scan**.
+
+![Paste URL](docs/screenshots/03-enter-repo-url.png)
+
+### 4. Select all five skills and click "Install selected"
+
+![Select and install](docs/screenshots/04-select-and-install.png)
+
+After install, **restart Chatbox** — skills load on app start, not on chat start.
+
+> **Important:** `design-core` must be first in the skills list. If a generic request ("make my site look better") routes straight to a subtype lens, the method is skipped.
+
+**Chatbox loads skills from a `skills` folder next to its app data. Where that lives depends on your OS:
 
 | OS | Path |
 |---|---|
