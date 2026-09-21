@@ -23,7 +23,7 @@ These are non-negotiable. Fix without asking.
 - **Click zones** — ≥44×44px on mobile.
 - **Body text** — ≥16px on mobile.
 - **Focus** — visible focus indicator on every interactive element, not only on hover.
--- **Spacing scale** — values come from 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64, not random.
+- **Spacing scale** — values come from 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64, not random.
 - **CTA hierarchy** — one clear primary, everything else visibly subordinate.
 - **Alignment** — one system; nothing off-axis without reason.
 - **Fill** — empty space is air (working) or a hole (broken). Air separates groups; a hole is space that serves nothing.
