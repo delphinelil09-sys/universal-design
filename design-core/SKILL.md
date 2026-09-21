@@ -66,7 +66,7 @@ Fix what is objectively broken. Do not ask permission — fix it. What counts as
 - **Click zones** — interactive targets smaller than 44×44px on mobile.
 - **Body text size** — below 16px on mobile.
 - **Focus** — no visible focus indicator on interactive elements (not only hover).
-- **Spacing scale** — random values instead of 4 / 8 / 12 / 16 / 24 / 32.
+- **Spacing scale** — random values instead of 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64.
 - **CTA hierarchy** — no clear primary / secondary / tertiary distinction.
 - **Alignment** — mixed systems with no reason; elements that "walk".
 - **Fill** — empty space that reads as a hole, not as air.
