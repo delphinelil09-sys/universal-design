@@ -52,6 +52,7 @@ https://github.com/delphinelil09-sys/universal-design
 ```
 
 and click **Scan**.
+
 <img src="docs/screenshots/03-enter-repo-url.png" width="600" alt="Paste URL">
 
 ### 4. Select all five skills and click "Install selected"
