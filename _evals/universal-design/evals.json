@@ -1,0 +1,68 @@
+{
+  "skill_name": "design-core",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "audit-landing-page",
+      "prompt": "Here's my HTML for a SaaS landing page. It works but looks generic — can you audit it and fix what's broken?\n\n[attach an HTML file]",
+      "expected_output": "Audit mode. Phase 1 only (no reference given). Finds concrete, objective issues: contrast ratios below 4.5:1, click zones under 44x44, spacing not on scale, CTA hierarchy unclear. Applies fixes. Does NOT invent a concept, does NOT run Phase 2, does NOT ask for an idea unless the user asked for one.",
+      "assertions": [
+        "Mode identified as audit, not creation",
+        "Phase 1 runs autonomously without asking permission",
+        "Phase 2 does NOT run (no idea or reference provided)",
+        "At least 3 concrete findings cite specific elements (color, space, form, etc.)",
+        "Findings include measurable values (contrast ratios, pixel sizes, spacing scale)",
+        "Subtype identified as promo (or asks user to confirm)",
+        "Output includes the corrected HTML or a diff, not just commentary"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "eval_name": "create-portfolio-with-reference",
+      "prompt": "I want a portfolio site for a ceramicist. The idea is 'quiet, warm, tactile, like holding a mug.' Reference: https://example.com/some-portfolio. Can you design it?",
+      "expected_output": "Creation mode. Observation → why (impression, design leads) → routes to design-portfolio. Moves through layers top-down: frame first, then body, surface, accent. Uses the reference as source material, not as something to copy. Does NOT default to cream + serif + terracotta (the calibration tell). Does NOT run the marketing filter.",
+      "assertions": [
+        "Mode identified as creation",
+        "Subtype identified as portfolio",
+        "design-portfolio lens is loaded (or referenced)",
+        "Why-question establishes goal = impression, design leads",
+        "Movement follows layers (frame → body → surface → accent), not the 8-element list",
+        "Reference is analyzed by elements, not copied wholesale",
+        "Does NOT produce the cream-background + serif + terracotta default",
+        "Marketing filter is NOT applied",
+        "Phase 1 runs as quick check, Phase 2 is the main work"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "eval_name": "ambiguous-brief",
+      "prompt": "My site looks boring. Make it beautiful.",
+      "expected_output": "Does NOT invent a concept. Asks why the site exists, what it's for, who the audience is. May run Phase 1 if a site is provided. Refuses Phase 2 without an idea and reference. Explains why character cannot be chosen on the user's behalf.",
+      "assertions": [
+        "Does NOT start producing a design immediately",
+        "Asks what the site is / what it's for / who the audience is",
+        "Asks for or requires an idea and a reference before Phase 2",
+        "Explains the floor/ceiling distinction",
+        "If a site was provided, Phase 1 may run; if not, waits",
+        "Does NOT default to generic 'make it modern' suggestions"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "eval_name": "hybrid-subtype",
+      "prompt": "I run a design studio. The site shows our projects and also sells our services. Here's the current HTML — can you make it better?",
+      "expected_output": "Recognizes hybrid (portfolio + promo). Asks the user: impression or sale? Loads the leading subtype based on the answer, pulls in the second only for sections that need it. Does NOT silently pick one and proceed.",
+      "assertions": [
+        "Recognizes the hybrid (portfolio + promo) — does not silently pick one",
+        "Asks the user which leads: impression or sale",
+        "After the answer, loads one leading subtype",
+        "Second subtype is pulled in only for specific sections",
+        "Does NOT merge both subtypes blindly from the start"
+      ],
+      "files": []
+    }
+  ]
+}
