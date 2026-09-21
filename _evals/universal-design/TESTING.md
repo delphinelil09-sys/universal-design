@@ -4,8 +4,7 @@ Four eval prompts to run after the skill set is installed.
 
 ## How to run
 
-**Option A — Chatbox, new session (recommended).**
-Install the five skills into the Chatbox skills directory (`C:\Users\TANSHI\AppData\Roaming\xyz.chatboxapp.app\skills`), start a fresh session, and paste each prompt. Do NOT mention the eval in the prompt — just paste the user-facing text. Watch whether the skill triggers, which mode it picks, which subtype it routes to.
+**Option B — skill-creator cycle (Claude Code only — requires subagents, not available in Chatbox). Use the skill-creator skill's iteration loop. Place this eval set at evals/evals.json inside design-core/ and run the standard with-skill / baseline comparison.
 
 **Option B — skill-creator cycle.**
 Use the skill-creator skill's iteration loop. Place this eval set at `evals/evals.json` inside `design-core/` and run the standard with-skill / baseline comparison.
