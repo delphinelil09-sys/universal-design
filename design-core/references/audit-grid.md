@@ -11,7 +11,7 @@ Used in **audit mode**. Reads all eight elements at once, not in layer order. Th
 | **Form** | Buttons, cards, crops | One radius system, one silhouette logic | Mixed radii; button shapes fighting cards |
 | **Color** | Background, surface, text, accent | 60-30-10 distribution; contrast ≥4.5:1 | Grey-on-grey; accent used everywhere; no hierarchy |
 | **Texture** | Backgrounds, shadows, grain | Supports depth without noise | Gradients as decoration; soft shadows on everything |
-| **Space** | Margins, padding, gaps | Scale 4/8/12/16/24/32 | Random values; tight where it should breathe |
+| Space | Margins, padding, gaps | Scale 4/8/12/16/24/32/48/64 | Random values; tight where it should breathe |
 | **Typography** | Headings, body, labels | Explicit scale; ≤80 chars per line | Too many sizes; unreadable body; decorative labels |
 | **Composition** | Grid, alignment, reading order | One alignment system; clear reading order | Elements "walk"; no clear primary / secondary |
 
