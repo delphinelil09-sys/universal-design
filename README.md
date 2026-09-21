@@ -39,11 +39,11 @@ The easiest way — through the Chatbox interface.
 
 In **Work mode**, click the **Skills** icon in the top-right corner.
 
-![Open Skills](docs/screenshots/01-open-skills.png)
+<img src="docs/screenshots/01-open-skills.png" width="600" alt="Open Skills">
 
 ### 2. Click "Install from GitHub"
 
-![Install from GitHub](docs/screenshots/02-click-install-from-github.png)
+<img src="docs/screenshots/02-click-install-from-github.png" width="600" alt="Install from GitHub">
 
 ### 3. Paste the repository URL
 
@@ -52,12 +52,11 @@ https://github.com/delphinelil09-sys/universal-design
 ```
 
 and click **Scan**.
-
-![Paste URL](docs/screenshots/03-enter-repo-url.png)
+<img src="docs/screenshots/03-enter-repo-url.png" width="600" alt="Paste URL">
 
 ### 4. Select all five skills and click "Install selected"
 
-![Select and install](docs/screenshots/04-select-and-install.png)
+<img src="docs/screenshots/04-select-and-install.png" width="600" alt="Select and install">
 
 After install, **restart Chatbox** — skills load on app start, not on chat start.
 
