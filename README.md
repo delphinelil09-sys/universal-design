@@ -63,7 +63,7 @@ After install, **restart Chatbox** — skills load on app start, not on chat sta
 
 > **Important:** `design-core` must be first in the skills list. If a generic request ("make my site look better") routes straight to a subtype lens, the method is skipped.
 
-**Chatbox loads skills from a `skills` folder next to its app data. Where that lives depends on your OS:
+**Chatbox loads skills from a `skills` folder next to its app data.** Where that lives depends on your OS:
 
 | OS | Path |
 |---|---|
