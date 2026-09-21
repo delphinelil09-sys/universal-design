@@ -2,12 +2,13 @@
 
 Four eval prompts to run after the skill set is installed.
 
+The skill set is designed for **Chatbox**, but it is not Chatbox-specific — it works in any environment that loads Markdown-based skills, including **Claude Code**. The only difference is how the evals are run: Chatbox is manual (Option A), Claude Code can automate the cycle (Option B).
+
 ## How to run
 
-**Option B — skill-creator cycle (Claude Code only — requires subagents, not available in Chatbox). Use the skill-creator skill's iteration loop. Place this eval set at evals/evals.json inside design-core/ and run the standard with-skill / baseline comparison.
+**Option A — Chatbox, new session (recommended).** Install the five skills into the Chatbox skills directory, start a fresh session, and paste each prompt. Do NOT mention the eval in the prompt — just paste the user-facing text. Watch whether the skill triggers, which mode it picks, which subtype it routes to.
 
-**Option B — skill-creator cycle.**
-Use the skill-creator skill's iteration loop. Place this eval set at `evals/evals.json` inside `design-core/` and run the standard with-skill / baseline comparison.
+**Option B — skill-creator cycle (Claude Code only — requires subagents, not available in Chatbox).** Use the skill-creator skill's iteration loop. Place this eval set at `evals/evals.json` inside `design-core/` and run the standard with-skill / baseline comparison.
 
 ## What to watch
 
