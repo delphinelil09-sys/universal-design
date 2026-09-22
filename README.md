@@ -113,7 +113,7 @@ One of the main arguments for this approach is economics. Here's a real test —
 
 | Metric | Value |
 |---|---|
-| Full audit cycle | ~5 kopecks (~$0.05) |
+| Full audit cycle | 5 kopecks (~$0.05) |
 | Context window used | 0.46% of 1.3M |
 | vs. Claude Opus 5 | ~70x cheaper |
 
