@@ -107,6 +107,18 @@ Start a new session and just talk:
 
 One file is meant to be replaced, not edited: `trends-2026-Q3.md`. Trends are a dated snapshot — when the season turns, swap the whole file. The structure is built for that.
 
+## Cost
+
+One of the main arguments for this approach is economics. Here's a real test — a full audit cycle (core activation → routing → lens → audit → fixed code):
+
+| Metric | Value |
+|---|---|
+| Full audit cycle | ~5 kopecks (~$0.05) |
+| Context window used | 0.46% of 1.3M |
+| vs. Claude Opus 5 | ~70x cheaper |
+
+The core doesn't drag all lenses into every request. It loads only what's needed, when it's needed. That's why the context stays clean and the cost stays low.
+
 ## License
 
 MIT, © delphinelil09 — do what you want with it, just keep the notice.
