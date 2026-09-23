@@ -42,6 +42,16 @@ Portfolio reading order is about immersion, not conversion:
 
 Navigation may live at the side, in a persistent menu, or as a quiet top bar — but it never occupies more visual weight than the work itself.
 
+## Audit specifics
+
+Beyond the common grid, these are the portfolio breakages to hunt:
+
+- **Form → Body → the grid forces one aspect ratio on mixed work** (portraits, landscapes, squares) → flex the grid per project, or use a masonry approach that respects each piece.
+- **Color → Body → the site's palette competes with the work** → the work provides the color; the site's palette recedes.
+- **Typography → Surface → project descriptions set below readable body size** → 16px floor and air, even over images.
+- **Line → Accent → frames and rules around every piece add noise** → borders only where they carry structure.
+- **Space → Frame → no path to the next project** ends the visit → each project points onward; contact is part of the frame.
+
 ## Return to core
 
 For the method, see `design-core/SKILL.md`. For the layers protocol, see `design-core/references/layers.md`. Marketing does not run as a filter here, but a path to contact is not optional — it is part of the frame.

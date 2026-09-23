@@ -1,12 +1,12 @@
 # Universal Design Skill — Eval Set
 
-Four eval prompts to run after the skill set is installed.
+Six eval prompts to run after the skill set is installed.
 
 The skill set is designed for **Chatbox**, but it is not Chatbox-specific — it works in any environment that loads Markdown-based skills, including **Claude Code**. The only difference is how the evals are run: Chatbox is manual (Option A), Claude Code can automate the cycle (Option B).
 
 ## How to run
 
-**Option A — Chatbox, new session (recommended).** Install the five skills into the Chatbox skills directory, start a fresh session, and paste each prompt. Do NOT mention the eval in the prompt — just paste the user-facing text. Watch whether the skill triggers, which mode it picks, which subtype it routes to.
+**Option A — Chatbox, new session (recommended).** Install the six skills into the Chatbox skills directory, start a fresh session, and paste each prompt. Do NOT mention the eval in the prompt — just paste the user-facing text. Watch whether the skill triggers, which mode it picks, which subtype it routes to.
 
 **Option B — skill-creator cycle (Claude Code only — requires subagents, not available in Chatbox).** Use the skill-creator skill's iteration loop. Place this eval set at `evals/evals.json` inside `design-core/` and run the standard with-skill / baseline comparison.
 
@@ -18,6 +18,8 @@ For each eval, check every assertion in `evals.json`. The important failure mode
 - **Eval 2 fails** if the output is the default cream + serif + terracotta — the skill didn't use the reference as source material.
 - **Eval 3 fails** if the skill starts designing instead of asking. This is the most important eval — it tests the hard gate.
 - **Eval 4 fails** if the skill silently picks one subtype and proceeds. The whole point is to ask.
+- **Eval 5 fails** if the skill routes a SaaS pricing page to promo instead of saas — or audits pricing as if it were a generic landing page.
+- **Eval 6 fails** if the skill fabricates product facts instead of asking for them, or if it treats copy as decoration rather than design.
 
 ## Baseline
 

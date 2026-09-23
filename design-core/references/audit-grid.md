@@ -28,6 +28,18 @@ These are non-negotiable. Fix without asking.
 - **Alignment** — one system; nothing off-axis without reason.
 - **Fill** — empty space is air (working) or a hole (broken). Air separates groups; a hole is space that serves nothing.
 
+## Responsive checks (Phase 1, mobile)
+
+The grid above is device-blind by default. On mobile, additionally check:
+
+- **Stacking order** — when columns collapse, does the reading order survive? Contact before content, navigation before the promise, or a feature placed above its own explanation are stacking breaks.
+- **Tap targets** — ≥44×44px, no two targets overlapping on a 320–375px viewport.
+- **Navigation** — reachable without hover and without JS gestures. A hamburger on desktop is a smell, not a style (see `trends-2026-Q3.md`); on mobile it must be reachable without tricks.
+- **No awkward truncation** — body text, prices, and CTAs that wrap or ellipsize mid-meaning at 320px are breaks, not layout quirks.
+- **The readability floor holds** — body ≥16px and contrast checks apply on the smallest screen, not only in the desktop compose.
+
+Run once at **320px** and once at **375px**, not "responsively in general."
+
 ## Finding format
 
 Write every finding in this shape so fixes are traceable:

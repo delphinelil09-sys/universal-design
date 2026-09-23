@@ -40,6 +40,16 @@ The ecommerce flow has three distinct reading orders, and each is optimized for 
 2. **Decide** — detail page answers the buyer's real questions (material, size, delivery, returns) in the order they arise.
 3. **Buy** — checkout confirms, doesn't interrogate. Every field has a visible reason.
 
+## Audit specifics
+
+Beyond the common grid, these are the ecommerce breakages to hunt:
+
+- **Typography → Surface → price and availability not readable on the card** → the two facts a buyer needs first are on the card, not only on the detail page.
+- **Form → Body → "add to cart" reads as decoration on the product image** → shape and contrast distinct from the rest of the card.
+- **Point → Accent → cart/wishlist/search icons differ in weight** → one icon system, aligned to the type baseline.
+- **Line → Frame → filters demand attention before they reduce results** → filters cut results, not attention; sensible defaults applied.
+- **Space → Frame → checkout compresses every step into one nervous screen** → each step past "add to cart" justifies its existence, with air between decisions.
+
 ## Return to core
 
-For the method, see `design-core/SKILL.md`. For the marketing filter (which runs here), see `design-core/references/marketing.md`. For the layers protocol, see `design-core/references/layers.md`.
+For the method, see `design-core/SKILL.md`. For the marketing filter (which runs here), see `design-core/references/marketing.md`. For the words on the page — which sell at least as hard as the visuals — see `design-core/references/copy.md`. For the layers protocol, see `design-core/references/layers.md`.

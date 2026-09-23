@@ -41,6 +41,16 @@ Info sites have two reading modes, and both matter:
 
 A page that serves only one of these modes fails the other.
 
+## Audit specifics
+
+Beyond the common grid, these are the info-site breakages to hunt:
+
+- **Space → Frame → navigation nests deeper than three levels** → three levels max; search carries the depth.
+- **Typography → Surface → paragraphs carry equal weight, nothing skimmable** → a real subhead system with visible hierarchy.
+- **Color → Body → accent used decoratively** → accent is reserved for links and actions; trust reads from restraint.
+- **Line → Accent → dividers between every section** → rules only where boundaries carry structure.
+- **Typography → Surface → dates and contacts buried at page end** → the current/contact facts surface where visitors look first (in docs: TOC and search stay visible).
+
 ## Return to core
 
-For the method, see `design-core/SKILL.md`. For the layers protocol, see `design-core/references/layers.md`. For the audit grid — which is especially useful for large info sites — see `design-core/references/audit-grid.md`.
+For the method, see `design-core/SKILL.md`. For the words on long pages — headings, dates, links — see `design-core/references/copy.md`. For the layers protocol, see `design-core/references/layers.md`. For the audit grid — which is especially useful for large info sites — see `design-core/references/audit-grid.md`.

@@ -1,6 +1,6 @@
 ---
 name: design-core
-description: "Universal method for designing, auditing, and elevating websites. Use whenever the user works on a site — landing page, portfolio, ecommerce, info site — mentions redesign, 'make it look better', 'why does my site look generic', 'audit my site', 'why isn't this converting', or asks for a site that doesn't look AI-generated. Routes to one of four subtype skills (design-promo, design-portfolio, design-ecommerce, design-info) after establishing why the site exists. Covers two modes (audit / creation) and two phases (floor / ceiling)."
+description: "Universal method for designing, auditing, and elevating websites. Use whenever the user works on a site — landing page, portfolio, ecommerce, info site, SaaS — mentions redesign, 'make it look better', 'why does my site look generic', 'audit my site', 'why isn't this converting', or asks for a site that doesn't look AI-generated. Routes to one of five subtype skills (design-promo, design-portfolio, design-ecommerce, design-info, design-saas) after establishing why the site exists. Covers two modes (audit / creation) and two phases (floor / ceiling)."
 ---
 
 # Design Core
@@ -18,7 +18,7 @@ Before touching design, walk these three steps in order. They are the same wheth
 Establish three facts. If any is unclear, ask.
 
 - **Artifact** — is there a ready HTML, a screenshot, a URL, or only a brief?
-- **Subtype** — is this promo, portfolio, ecommerce, or info? (See routing below.)
+- **Subtype** — is this promo, portfolio, ecommerce, info, or saas (subscription software)? (See routing below.)
 - **Task** — is this create, fix, or elevate?
 
 ### 2. Why
@@ -40,6 +40,18 @@ The answer decides **who leads**:
 ### 3. Routing
 
 Load the subtype lens that matches the site. If the subtype is not obvious (a hybrid — e.g., a studio site that both shows work and sells services), **ask the user**: "Is this more about impression or about sale?" Then load the leading subtype, and pull in the second only for the sections that need it.
+
+## The running context
+
+From entry to done, keep these five facts in mind. They are the context the lens builds on — a lens never restarts the method, it adds to it:
+
+1. **Artifact** — HTML, screenshot, URL, or brief?
+2. **Subtype** — which lens is leading?
+3. **Who leads** — marketing (sale), design (impression), or cooperation (explanation)?
+4. **Mode** — audit or creation?
+5. **Phase** — floor (fixed), ceiling (user's direction), or both?
+
+State them aloud when the lens loads, so the user can correct a wrong assumption early. If a later decision contradicts one of these five, the context wins and the decision is re-made.
 
 ## Two modes
 
@@ -81,19 +93,21 @@ Do not invent a concept. Phase 2 requires the user to provide:
 2. **A direction** — a reference, an example, "like X but Y".
 3. **Material** — photos, textures, brand elements, if any.
 
-With those, expand the idea into concrete decisions across the eight elements. Without them, Phase 2 does not run. Say so plainly: "Character cannot be chosen for you — give me a direction, or the site stays at the floor."
+With those, expand the idea into concrete decisions using the protocol in `references/ceiling.md`: decompose the reference by elements, extract the gesture (one sentence), translate top-down through the layers. Without them, Phase 2 does not run. Say so plainly: "Character cannot be chosen for you — give me a direction, or the site stays at the floor."
 
 **Phase 2 never runs on a site that failed Phase 1.** Correctness first, character second.
 
 ## References
 
-Load these on demand. Do not read them all at once.
+References are **not** pasted into this file. To load one, read its file with your available read/file tool — never guess its content. Load on demand; do not read them all at once.
 
 - `references/elements.md` — the eight elements as vocabulary. Load when first speaking about design vocabulary.
 - `references/layers.md` — top-down movement protocol. Load in creation mode.
 - `references/audit-grid.md` — diagnostic grid. Load in audit mode.
 - `references/generation.md` — the "0 to 1" process. Load in creation mode.
+- `references/ceiling.md` — Phase 2 protocol: idea + reference → concrete decisions. Load in creation mode when the user brings a direction.
 - `references/marketing.md` — marketing as a filter layer. Load when the goal is sale.
+- `references/copy.md` — words as a design element; the textual slop filter. Load in audit and creation whenever text is written or assessed.
 - `references/trends-2026-Q3.md` — dated snapshot of current patterns. Load when the user asks for "current" or "modern"; check freshness.
 
 ## Subtype routing
@@ -102,6 +116,7 @@ Load these on demand. Do not read them all at once.
 - **portfolio** (designer, photographer, agency, artist) → load `design-portfolio`.
 - **ecommerce** (stores, product pages, catalogues) → load `design-ecommerce`.
 - **info** (corporate, documentation, content-heavy) → load `design-info`.
+- **saas** (subscription software, pricing, product-led growth) → load `design-saas`. For subscription products this replaces promo — the visitor is buying a promise, not an event; pricing and trust carry the page.
 
 If the site is a hybrid, ask first, then load the leading subtype.
 

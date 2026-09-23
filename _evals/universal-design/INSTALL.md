@@ -1,12 +1,13 @@
 # Install
 
-The five skills live in the repository at:
+The six skills live in the repository at:
 
-- `design-core/` — the entry point (SKILL.md + 6 references)
+- `design-core/` — the entry point (SKILL.md + 8 references)
 - `design-promo/` — landing page lens
 - `design-portfolio/` — portfolio lens
 - `design-ecommerce/` — ecommerce lens
 - `design-info/` — info site lens
+- `design-saas/` — subscription product lens (replaces promo for SaaS)
 
 ## Get the files (git)
 
@@ -19,7 +20,7 @@ or download the repository as a ZIP and unpack it.
 
 ## Target location (Chatbox)
 
-Copy the five skill directories into the Chatbox global skills folder.
+Copy the six skill directories into the Chatbox global skills folder.
 
 Standard locations by OS:
 
@@ -67,16 +68,17 @@ skills/
 ├── design-promo/SKILL.md
 ├── design-portfolio/SKILL.md
 ├── design-ecommerce/SKILL.md
-└── design-info/SKILL.md
+├── design-info/SKILL.md
+└── design-saas/SKILL.md
 ```
 
 Do **not** copy `_evals/` — it is dev tooling, not a skill (no top-level SKILL.md).
 
 ## Order matters
 
-`design-core` must appear **before** the four subtype skills in any listing the model sees. Its description is written to trigger on generic design requests ("make my site look better", "why does it look generic"). The subtypes are written to trigger more narrowly. If a subtype appears first, a generic request may route directly to a subtype and skip the three entry steps.
+`design-core` must appear **before** the five subtype skills in any listing the model sees. Its description is written to trigger on generic design requests ("make my site look better", "why does it look generic"). The subtypes are written to trigger more narrowly. If a subtype appears first, a generic request may route directly to a subtype and skip the three entry steps.
 
-In the Chatbox skills folder the directories sort alphabetically, and `design-core` sorts before `design-{ecommerce,info,portfolio,promo}` — the required order holds by name.
+In the Chatbox skills folder the directories sort alphabetically, and `design-core` sorts before `design-{ecommerce,info,portfolio,promo,saas}` — the required order holds by name.
 
 ## Verifying the trigger
 

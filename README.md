@@ -1,6 +1,8 @@
 # Universal Design
 
-Five Chatbox skills for designing and fixing websites — landing pages, portfolios, stores, corporate sites. The goal isn't "modern" or "premium." It's a site that doesn't look like a template, and doesn't look AI-generated either.
+Six Chatbox skills for designing and fixing websites — landing pages, portfolios, stores, corporate sites, SaaS. The goal isn't "modern" or "premium." It's a site that doesn't look like a template, and doesn't look AI-generated either.
+
+One honest caveat: **this is not a panacea.** The method fixes the common failure modes — the template look, broken floor standards, vague direction. It cannot give a weak product a strong story, replace taste, or write your content for you. A correct site about nothing is still about nothing.
 
 ## The idea
 
@@ -18,18 +20,21 @@ design-core/          the method: entry steps, modes, phases, routing
     ├── layers.md         — the four layers and how to move through them
     ├── audit-grid.md     — what "broken" means, element by element
     ├── generation.md     — turning a brief into a site
+    ├── ceiling.md        — idea + reference → concrete decisions (Phase 2)
     ├── marketing.md      — conversion as a filter, not a ninth element
+    ├── copy.md           — words as a design element; the textual slop filter
     └── trends-2026-Q3.md — what looked good in Q3 2026 (a snapshot, not a law)
 
 design-promo/         landing pages and product launches
 design-portfolio/     portfolios and studios
 design-ecommerce/     stores and product pages
 design-info/          corporate and documentation sites
+design-saas/          subscription products, pricing, product-led growth
 
 _evals/               test prompts — dev tooling, not a skill
 ```
 
-The four lenses are thin on purpose. They add what's specific to their type and defer everything else to the core. If you ever see `design-ecommerce` explaining the eight elements, that's a bug — it shouldn't.
+The five lenses are thin on purpose. They add what's specific to their type and defer everything else to the core. If you ever see `design-ecommerce` explaining the eight elements, that's a bug — it shouldn't.
 
 ## Install (Chatbox)
 
@@ -55,9 +60,11 @@ and click **Scan**.
 
 <img src="docs/screenshots/03-enter-repo-url.png" width="600" alt="Paste URL">
 
-### 4. Select all five skills and click "Install selected"
+### 4. Select all six skills and click "Install selected"
 
 <img src="docs/screenshots/04-select-and-install.png" width="600" alt="Select and install">
+
+> Screenshots may lag the repo by one skill — the current set is **six** (core, promo, portfolio, ecommerce, info, saas). Select all of them.
 
 After install, **restart Chatbox** — skills load on app start, not on chat start.
 
@@ -71,7 +78,7 @@ After install, **restart Chatbox** — skills load on app start, not on chat sta
 | macOS | `~/Library/Application Support/xyz.chatboxapp.app/skills` |
 | Linux | `~/.config/xyz.chatboxapp.app/skills` |
 
-Clone the repo and copy the five `design-*` folders in:
+Clone the repo and copy the six `design-*` folders in:
 
 ```bash
 git clone https://github.com/delphinelil09-sys/universal-design
@@ -81,12 +88,12 @@ cd universal-design
 ```powershell
 # Windows (PowerShell)
 $skills = "$env:APPDATA\xyz.chatboxapp.app\skills"
-Copy-Item design-core design-promo design-portfolio design-ecommerce design-info $skills -Recurse
+Copy-Item design-core design-promo design-portfolio design-ecommerce design-info design-saas $skills -Recurse
 ```
 
 ```bash
 # macOS / Linux
-cp -r design-core design-promo design-portfolio design-ecommerce design-info \
+cp -r design-core design-promo design-portfolio design-ecommerce design-info design-saas \
   "$HOME/Library/Application Support/xyz.chatboxapp.app/skills"   # macOS
   # or: ~/.config/xyz.chatboxapp.app/skills                       # Linux
 ```
@@ -102,22 +109,17 @@ Start a new session and just talk:
 - *"Here's my landing page, it looks generic. Fix it."* — audit mode, objective fixes.
 - *"A portfolio for a ceramicist. Quiet, warm, like holding a mug."* — creation mode, top-down, your words become the direction.
 - *"Make it beautiful."* — it will ask questions instead of guessing. That's the skill working, not failing.
+- *"My SaaS pricing page isn't converting — audit it."* — routes to the SaaS lens: pricing as a discipline, trust placed where doubt happens, benefit-driven CTAs.
 
 ## Maintenance
 
 One file is meant to be replaced, not edited: `trends-2026-Q3.md`. Trends are a dated snapshot — when the season turns, swap the whole file. The structure is built for that.
 
-## Cost
+## Cost — why it stays light
 
-One of the main arguments for this approach is economics. Here's a real test — a full audit cycle (core activation → routing → lens → audit → fixed code):
+The method loads only what a task needs. An audit pulls the core and one lens; creation pulls the generation reference on demand. The whole core is a few dozen kilobytes — small enough that a full working context fits comfortably in a modest session.
 
-| Metric | Value |
-|---|---|
-| Full audit cycle | 5 kopecks (~$0.05) |
-| Context window used | 0.46% of 1.3M |
-| vs. Claude Opus 5 | ~70x cheaper |
-
-The core doesn't drag all lenses into every request. It loads only what's needed, when it's needed. That's why the context stays clean and the cost stays low.
+Exact numbers depend on the model and tariff, so we deliberately don't advertise them. What holds is the shape: load-on-demand beats a giant system prompt on cost, latency, and attention — on any model.
 
 ## License
 

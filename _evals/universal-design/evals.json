@@ -63,6 +63,36 @@
         "Does NOT merge both subtypes blindly from the start"
       ],
       "files": []
+    },
+    {
+      "id": 5,
+      "eval_name": "saas-pricing-page",
+      "prompt": "My SaaS has a free tier and two paid plans. The pricing page isn't converting — here's the HTML. Audit it.",
+      "expected_output": "Routes to design-saas, not design-promo (subscription product, not an event). Phase 1. Pricing-specific findings: plan comparability, one visually primary plan, included/excluded marks distinguishable without color alone, trust (security/compliance) placed where doubt happens, benefit-driven CTA labels. Does NOT treat the site as a generic landing page.",
+      "assertions": [
+        "Subtype identified as SaaS, not promo",
+        "design-saas lens is loaded (or referenced)",
+        "Phase 1 runs autonomously",
+        "At least 2 pricing-specific findings (plan weight, comparison access, included/excluded marks)",
+        "Trust placement is checked, not just hero and CTA",
+        "CTA wording is checked against benefit-driven copy",
+        "Findings include measurable values or concrete before/after"
+      ],
+      "files": []
+    },
+    {
+      "id": 6,
+      "eval_name": "generic-copy",
+      "prompt": "Here's my landing page. The words feel generic and AI-generated — can you rewrite the copy?",
+      "expected_output": "Treats copy as a design element (references/copy.md): hunts fish headlines, benefitless CTAs, the empty value trio, adjectives instead of facts. Rewrites in the visitor's voice. Does NOT fabricate product facts — where a fact is needed (numbers, benchmarks, compliance), asks the user instead of inventing.",
+      "assertions": [
+        "Copy is treated as part of the design, not decoration",
+        "At least 2 template-voice markers are named explicitly (fish headline, benefitless CTA, empty value trio, middle-dot meta)",
+        "Rewrite keeps the visitor's voice, not the company's",
+        "No fabricated facts — missing product facts are requested, not invented",
+        "Phase 2 does NOT run (no idea/reference provided)"
+      ],
+      "files": []
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 name: design-promo
-description: "Landing page / promo site lens. Use when the site's purpose is to convince and convert — landing pages, product launches, service promos, event pages, SaaS marketing sites. Load after design-core has established why the site exists and confirmed the goal is sale or signup. Does not replace design-core; adds subtype-specific priorities, typical failures, and layer-by-layer guidance."
+description: "Landing page / promo site lens. Use when the site's purpose is to convince and convert — landing pages, product launches, service promos, event pages. Load after design-core has established why the site exists and confirmed the goal is sale or signup. Does not replace design-core; adds subtype-specific priorities, typical failures, layer-by-layer guidance, and audit specifics. For subscription software (SaaS), design-saas replaces this lens."
 ---
 
 # Design Promo — Landing Pages
@@ -42,6 +42,16 @@ The landing page has one reading order and it does not vary by taste:
 3. Path (the one action)
 
 If the composition puts anything else in the top 3, revise it.
+
+## Audit specifics
+
+Beyond the common grid, these are the landing-page breakages to hunt:
+
+- **Space → Frame → the hero asks for attention in six places** (headline, subhead, two CTAs, image, logos) → one job per hero; the promise owns it.
+- **Typography → Surface → the headline is a slogan about the company**, not a promise to the visitor → rewrite from the visitor's side (see `design-core/references/copy.md`).
+- **Point → Accent → icons decorate instead of explain** → remove every non-functional icon.
+- **Color → Body → accent spread across links, badges, and borders** erases the CTA → accent belongs to the primary action.
+- **Line → Frame → proof buried below trust-breaking sections** → where hesitation starts, proof answers.
 
 ## Return to core
 
