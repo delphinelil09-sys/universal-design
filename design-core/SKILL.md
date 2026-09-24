@@ -121,6 +121,7 @@ References are **not** pasted into this file. To load one, read its file with yo
 - `references/marketing.md` — marketing as a filter layer. Load when the goal is sale.
 - `references/copy.md` — words as a design element; the textual slop filter. Load in audit and creation whenever text is written or assessed.
 - `references/trends-2026-Q3.md` — dated snapshot of current patterns. Load when the user asks for "current" or "modern"; check freshness.
+- `references/tools.md` — file editing rules (CRLF, batch limits, scope discipline for edits). Load when the task involves writing or modifying files.
 
 ## Subtype routing
 

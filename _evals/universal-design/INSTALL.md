@@ -64,6 +64,9 @@ skills/
 │       ├── audit-grid.md
 │       ├── generation.md
 │       ├── marketing.md
+│       ├── ceiling.md
+│       ├── copy.md
+│       ├── tools.md
 │       └── trends-2026-Q3.md
 ├── design-promo/SKILL.md
 ├── design-portfolio/SKILL.md
