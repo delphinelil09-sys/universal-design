@@ -15,7 +15,7 @@ Used in **audit mode**. Reads all eight elements at once, not in layer order. Th
 | **Typography** | Headings, body, labels | Explicit scale; ≤80 chars per line | Too many sizes; unreadable body; decorative labels |
 | **Composition** | Grid, alignment, reading order | One alignment system; clear reading order | Elements "walk"; no clear primary / secondary |
 
-## Objective checks (Phase 1)
+## Objective checks (Floor)
 
 These are non-negotiable. Fix without asking.
 
@@ -28,7 +28,7 @@ These are non-negotiable. Fix without asking.
 - **Alignment** — one system; nothing off-axis without reason.
 - **Fill** — empty space is air (working) or a hole (broken). Air separates groups; a hole is space that serves nothing.
 
-## Responsive checks (Phase 1, mobile)
+## Responsive checks (Floor, mobile)
 
 The grid above is device-blind by default. On mobile, additionally check:
 
@@ -42,25 +42,37 @@ Run once at **320px** and once at **375px**, not "responsively in general."
 
 ## Finding format
 
-Write every finding in this shape so fixes are traceable:
+Split the report into two sections. Never mix them.
+
+**Floor** — objective, fix without asking. Findings here go straight to a fix.
+**Ceiling** — requires user direction. Findings here are observations, not fixes; they wait for the user to bring an idea or reference.
+
+Both sections use the same shape:
 
 ```
 Element → Layer → Problem → Fix
 ```
 
-Example:
+Examples:
 
+Floor
 ```
 Color → Body → accent #FF6B6B on #FFFFFF fails contrast at 3.1:1
 → darken to #C43D3D (4.7:1), or move the accent to a dark surface
 ```
 
-Example:
-
 ```
 Space → Frame → section padding is random: 22px, 30px, 18px, 44px
 → snap to scale: 24px, 32px, 16px, 48px
 ```
+
+Ceiling
+```
+Composition → Frame → every section is centered; the rhythm is monotone
+→ needs a direction: which sections should break the central axis, and why
+```
+
+Do not use PM-style priorities (Critical / High / Medium / Low). Floor and ceiling are the only two levels. A ceiling item is not "lower priority" than a floor item — it is a **different kind of problem**. Floor items are broken; ceiling items are unbuilt.
 
 ## What the grid does not do
 
