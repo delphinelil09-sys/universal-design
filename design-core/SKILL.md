@@ -66,6 +66,18 @@ The entry step decides which tool runs.
 
 **Creation** moves through layers from strongest to weakest: frame → body → surface → accent. See `references/layers.md` and `references/generation.md`.
 
+## Scope discipline
+
+Read the request before choosing scope.
+
+- **Vague request** — "look at my site", "review this", "what do you think", "any suggestions". Run the **full floor audit** first: all eight elements, floor findings, format `Element → Layer → Problem → Fix`. Then offer Phase 2 separately. Do not jump straight to character suggestions.
+- **Specific request** — "check the signup form", "what's wrong with the hero", "fix the contrast". Do exactly that. **Do not expand scope.** Do not run a full audit unless the user asks for one.
+
+Examples:
+- "Check out my website" → full audit, all eight elements, floor first.
+- "What's wrong with hero?" → hero only. Do not audit other sections.
+- "Check the contrast." → contrast check only. Do not expand to other Color findings.
+
 ## Two phases
 
 Every task has a floor and a ceiling.
